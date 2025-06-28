@@ -1,0 +1,33 @@
+/* cv.css */
+.cv-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .cv-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+  }
+  
+  .cv-actions {
+    margin-bottom: 2rem;
+  }
+  
+  .cv-actions .button {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .cv-actions .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cv-embed {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  

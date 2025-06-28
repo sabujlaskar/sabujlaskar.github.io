@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tutorials | Sabuj Laskar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .tutorial-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 1rem;
+      background-color: #ffffff;
+    }
+  
+    .tutorial-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: #111;
+    }
+  
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
+  
+    .tutorial-card {
+      background-color: #ffffff;
+      color: #111;
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+    }
+  
+    .tutorial-card:hover {
+      transform: scale(1.05);
+    }
+  
+    .tutorial-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+  
+    .tutorial-content {
+      padding: 1rem;
+    }
+  
+    .tutorial-category {
+      color: #007BFF;
+      font-size: 0.85rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+  
+    .tutorial-title-card {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .tutorial-description {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+  
+    .tutorial-date {
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sabuj Laskar</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Papers</a>
+      <!-- <a href="teaching.html">Teaching</a> -->
+      <a href="news.html">News</a>
+      <!-- <a href="projects.html">Projects</a> -->
+      <a href="cv.html">CV</a>
+      <a href="tutorials.html">Tutorials</a>
+    </nav>
+  </header>
+
+  <main class="tutorial-container">
+    <h2 class="tutorial-title">Featured Tutorials</h2>
+    <div class="card-grid">
+      <a href="tutorial1.html" class="tutorial-card">
+        <img src="images/tutorial1.jpg" alt="Tutorial 1" />
+        <div class="tutorial-content">
+          <div class="tutorial-category">Large Language Models</div>
+          <div class="tutorial-title-card">An example preprint / working paper</div>
+          <div class="tutorial-description">Brief description of the tutorial goes here. Keep it concise and informative.</div>
+          <div class="tutorial-date">Apr 7, 2019</div>
+        </div>
+      </a>
+
+      <a href="tutorial2.html" class="tutorial-card">
+        <img src="images/tutorial2.jpg" alt="Tutorial 2" />
+        <div class="tutorial-content">
+          <div class="tutorial-category">Large Language Models</div>
+          <div class="tutorial-title-card">An example conference paper</div>
+          <div class="tutorial-description">Another short description to summarize the content of this tutorial.</div>
+          <div class="tutorial-date">Jul 1, 2013</div>
+        </div>
+      </a>
+
+      <a href="tutorial2.html" class="tutorial-card">
+        <img src="images/tutorial2.jpg" alt="Tutorial 2" />
+        <div class="tutorial-content">
+          <div class="tutorial-category">Large Language Models</div>
+          <div class="tutorial-title-card">An example conference paper</div>
+          <div class="tutorial-description">Another short description to summarize the content of this tutorial.</div>
+          <div class="tutorial-date">Jul 1, 2013</div>
+        </div>
+      </a>
+
+      <a href="tutorial2.html" class="tutorial-card">
+        <img src="images/tutorial2.jpg" alt="Tutorial 2" />
+        <div class="tutorial-content">
+          <div class="tutorial-category">Large Language Models</div>
+          <div class="tutorial-title-card">An example conference paper</div>
+          <div class="tutorial-description">Another short description to summarize the content of this tutorial.</div>
+          <div class="tutorial-date">Jul 1, 2013</div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sabuj Laskar. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* homepage.css */
+.hero-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #024040, #015353);
+  }
+  
+  .left-column {
+    flex: 1 1 280px;
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 1rem;
+  }
+  
+  .left-column h2, .right-column h2 {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+  }
+  
+  .left-column p {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+  }
+  
+  .right-column {
+    flex: 2 1 600px;
+    max-width: 720px;
+    padding: 1rem;
+  }
+  
+  .right-column p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  .grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+  
+  .card {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1 1 260px;
+  }
+  
+  .card h3 {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  
+  .card ul.education li::before {
+    content: "\f19d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.6rem;
+    color: #ffffff;
+  }
+  

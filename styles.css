@@ -1,0 +1,426 @@
+/* styles.css - FINAL FIX for proper icon display */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background-color: #004d4d;
+  color: #ffffff;
+}
+
+header {
+  background-color: #ffffff;
+  color: #111;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #007BFF;
+}
+
+.hero-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #024040, #015353);
+}
+
+.left-column {
+  flex: 1 1 280px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+
+.left-column h2 {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+}
+
+.left-column p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.icons i {
+  color: white;
+}
+
+.icons a {
+  color: white;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.icons a:hover i {
+  color: #ffcc00;
+}
+
+.right-column {
+  flex: 2 1 600px;
+  max-width: 720px;
+  padding: 1rem;
+}
+
+.right-column h2 {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+.right-column p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: #343a40;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.button i {
+  margin-right: 0.5rem;
+}
+
+.button:hover {
+  background-color: #007BFF;
+  transition: 0.3s;
+}
+
+.grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 260px;
+  box-shadow: none;
+}
+
+.card h3 {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.card h3 i {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.card ul.education li::before {
+  content: "\f19d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 0.6rem;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .right-column, .left-column {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
+
+/* Latest Tutorials Section */
+.latest-tutorials {
+    padding: 4rem 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .latest-tutorials h2 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 2rem;
+  }
+  
+  /* Card Grid for Tutorials */
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Individual Tutorial Card */
+  .tutorial-card {
+    background-color: #ffffff;
+    color: #111;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .tutorial-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .tutorial-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .tutorial-content {
+    padding: 1rem;
+  }
+  
+  .tutorial-category {
+    color: #007BFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tutorial-title-card {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tutorial-description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tutorial-date {
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  .recent-publications {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    color: #111;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .recent-publications h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+  
+  .publication {
+    margin-bottom: 2rem;
+  }
+  
+  .publication p {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .publication em {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+  }
+  
+  .pub-links a {
+    text-decoration: none;
+    color: #007B5E;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  .pub-links a i {
+    font-size: 0.9rem;
+  }
+
+  .teaching-experience {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    color: #111;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .teaching-experience h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ta-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .ta-card {
+    background-color: #f9f9f9;
+    color: #111;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .ta-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ta-card h3 {
+    font-size: 1.2rem;
+    color: #007BFF;
+    margin-top: 0;
+  }
+  
+  .ta-card p {
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+  }
+  
+  .cv-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .cv-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+  }
+  
+  .cv-actions {
+    margin-bottom: 2rem;
+  }
+  
+  .cv-actions .button {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .cv-actions .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cv-embed {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  

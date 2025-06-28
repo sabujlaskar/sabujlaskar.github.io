@@ -1,0 +1,19 @@
+/* navigation.css */
+nav {
+    background-color: #ffffff;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #111;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  nav a:hover {
+    color: #007BFF;
+  }
+  

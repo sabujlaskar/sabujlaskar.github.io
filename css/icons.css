@@ -1,0 +1,22 @@
+/* icons.css */
+.icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .icons i {
+    color: white;
+  }
+  
+  .icons a {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .icons a:hover i {
+    color: #ffcc00;
+  }
+  
