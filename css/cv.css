@@ -12,6 +12,12 @@
     color: #111;
   }
   
+  .cv-note {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
   .cv-actions {
     margin-bottom: 2rem;
   }
